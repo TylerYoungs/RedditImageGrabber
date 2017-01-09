@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Threading;
 
 namespace AutomatedRedditImageDownloaderClient
 {
@@ -12,12 +13,16 @@ namespace AutomatedRedditImageDownloaderClient
         private static string _blacklistUrl = @"http://earth.tyleryoungs.com/Blacklist";
         private static string _whiteListUrl = @"http://earth.tyleryoungs.com/Whitelist";
         private static string _serverDownloadLocation = @"http://earth.tyleryoungs.com/Pictures/";
+        private static int _imagesDownloaded = 0;
+        private static int _secondsToSleep = 8;
 
         public static void Main(string[] args)
         {
             var imagesAlreadyDownloaded = GetImagesAlreadyDownloaded();
             AddWhitelistedImages(imagesAlreadyDownloaded);
             RemoveBlacklistedImages(imagesAlreadyDownloaded);
+            Console.WriteLine($"Downloaded {_imagesDownloaded} images from earth.tyleryoungs.com");
+            Thread.Sleep(_secondsToSleep*1000);
         }
 
         private static List<string> GetFileNamesFromSource(string url)
@@ -53,6 +58,7 @@ namespace AutomatedRedditImageDownloaderClient
                         {
                             Console.WriteLine($"Downloading image {name}");
                             client.DownloadFile(new Uri(serverPath), localPath);
+                            _imagesDownloaded++;
                         }
                     }
                     catch(Exception)
