@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutomatedRedditImageDownloaderClient.exe" size="8160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutomatedRedditImageDownloaderClient.exe" size="8672">
       <assemblyIdentity name="AutomatedRedditImageDownloaderClient" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+nkCV+p+XKZFw4L4DnjVjIaf3wO48yHU5udkAjcEQqA=</dsig:DigestValue>
+        <dsig:DigestValue>nF4PxoqJSj+fIbekE5eeQOg4+zjAgAmfDlXQuaRAQjg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

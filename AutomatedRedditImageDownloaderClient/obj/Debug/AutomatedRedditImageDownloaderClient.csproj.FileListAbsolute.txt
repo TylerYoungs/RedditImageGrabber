@@ -11,3 +11,10 @@ C:\Users\Tyler\Documents\Visual Studio 2015\Projects\AutomatedRedditImageDownloa
 C:\Users\Tyler\Source\Repos\Reddit Image Grabber\AutomatedRedditImageDownloaderClient\bin\Debug\AutomatedRedditImageDownloaderClient.exe.config
 C:\Users\Tyler\Source\Repos\Reddit Image Grabber\AutomatedRedditImageDownloaderClient\obj\Debug\AutomatedRedditImageDownloaderClient.exe
 C:\Users\Tyler\Source\Repos\Reddit Image Grabber\AutomatedRedditImageDownloaderClient\obj\Debug\AutomatedRedditImageDownloaderClient.pdb
+C:\Users\Tyler\Source\Repos\Reddit Image Grabber\AutomatedRedditImageDownloaderClient\bin\Debug\AutomatedRedditImageDownloaderClient.exe.manifest
+C:\Users\Tyler\Source\Repos\Reddit Image Grabber\AutomatedRedditImageDownloaderClient\bin\Debug\AutomatedRedditImageDownloaderClient.application
+C:\Users\Tyler\Source\Repos\Reddit Image Grabber\AutomatedRedditImageDownloaderClient\bin\Debug\AutomatedRedditImageDownloaderClient.exe
+C:\Users\Tyler\Source\Repos\Reddit Image Grabber\AutomatedRedditImageDownloaderClient\bin\Debug\AutomatedRedditImageDownloaderClient.pdb
+C:\Users\Tyler\Source\Repos\Reddit Image Grabber\AutomatedRedditImageDownloaderClient\obj\Debug\AutomatedRedditImageDownloaderClient.csprojResolveAssemblyReference.cache
+C:\Users\Tyler\Source\Repos\Reddit Image Grabber\AutomatedRedditImageDownloaderClient\obj\Debug\AutomatedRedditImageDownloaderClient.exe.manifest
+C:\Users\Tyler\Source\Repos\Reddit Image Grabber\AutomatedRedditImageDownloaderClient\obj\Debug\AutomatedRedditImageDownloaderClient.application

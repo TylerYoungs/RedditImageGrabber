@@ -8,7 +8,7 @@ namespace AutomatedRedditImageDownloaderClient
 {
     public class Program
     {
-        private static string _localDownloadLocation = @".\Downloads";
+        private static string _localDownloadLocation = @".\Images";
         private static string _blacklistUrl = @"http://earth.tyleryoungs.com/Blacklist";
         private static string _whiteListUrl = @"http://earth.tyleryoungs.com/Whitelist";
         private static string _serverDownloadLocation = @"http://earth.tyleryoungs.com/Pictures/";
@@ -47,10 +47,17 @@ namespace AutomatedRedditImageDownloaderClient
                 {
                     var localPath = Path.Combine(_localDownloadLocation, name);
                     var serverPath = Path.Combine(_serverDownloadLocation, name);
-
-                    using (WebClient client = new WebClient())
+                    try
                     {
-                        client.DownloadFile(new Uri(serverPath), localPath);
+                        using (WebClient client = new WebClient())
+                        {
+                            Console.WriteLine($"Downloading image {name}");
+                            client.DownloadFile(new Uri(serverPath), localPath);
+                        }
+                    }
+                    catch(Exception)
+                    {
+                        Console.WriteLine($"Error downloading {name}");
                     }
                 }
             }
@@ -65,7 +72,14 @@ namespace AutomatedRedditImageDownloaderClient
                 if (imagesAlreadyDownloaded.Contains(name))
                 {
                     var path = Path.Combine(_localDownloadLocation, name);
-                    File.Delete(path);
+                    try
+                    {
+                        File.Delete(path);
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine($"Error deleting image {name} from {path}");
+                    }
                 }
             }
         }
